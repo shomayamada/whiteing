@@ -1,0 +1,156 @@
+.money__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        width: 100%;
+        margin: auto;
+        padding-top: rem(60);
+        padding-bottom: rem(70);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.money__wrap {
+    @include mq("sp") {
+        margin-top: rem(70);
+    }
+} 
+
+.money__picture {
+    max-width: rem(314);
+    width: 100%;
+
+    @include mq("sp") {
+        max-width: rem(500);
+        margin: auto;
+    }
+}
+
+.money__picture img {
+
+    @include mq("sp") {
+        width: 100%;
+    }
+}
+
+.money__container {
+    width: 100%;
+    display: flex;
+    background: $white;
+    margin-top: rem(70);
+    padding-top: rem(80);
+    padding-bottom: rem(60);
+    padding-left: rem(70);
+    padding-right: rem(40);
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.16);
+
+    @include mq("sp") {
+        display: block;
+        margin: auto;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.monet__table-text {
+    display: block;
+}
+
+.money__text-box {
+    margin-left: rem(70);
+    width: 100%;
+
+    @include mq("sp") {
+        margin-left: rem(0);
+    }
+}
+
+.money__title {
+    font-size: rem(24);
+    font-weight: $bold;
+
+    @include mq("sp") {
+        text-align: center;
+        padding-top: rem(30);
+    }
+}
+
+.money__self {
+    padding-top: rem(30);
+
+    @include mq("sp") {
+        max-width: rem(500);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.money__self-box {
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+
+    @include mq("sp") {
+        display: block;
+        padding-bottom: rem(30);
+        line-height: 1.5;
+    }
+}
+
+.money__self-number {
+    max-width: rem(180);
+    width: 100%;
+    font-size: rem(16);
+
+    @include mq("sp") {
+        padding-bottom: rem(10);
+    }
+}
+
+.money__self-number {
+    font-size: rem(18);
+}
+
+.money__self-number span {
+    max-width: rem(40);
+    width: 100%;
+    display: inline-block;
+    font-size: rem(22);
+}
+
+.money__self-money {
+    width: 100%;
+    font-size: rem(16);
+}
+
+.money__self-money span {
+    display: inline-block;
+    max-width: rem(110);
+    width: 100%;
+    font-size: rem(22);
+    letter-spacing: rem(1.8);
+    font-weight: $medium;
+    text-align: right;
+}
+
+.money__self-money sub {
+    font-size: rem(18);
+    vertical-align: super;
+}
+
+.money__self-text {
+    font-size: rem(14);
+    line-height: 2.3;
+
+    @include mq("sp") {
+        padding-bottom: rem(30);
+        line-height: 1.5;
+    }
+}

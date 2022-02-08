@@ -1,0 +1,75 @@
+.ban__inner {
+    max-width: rem(1200);
+    width: 100%;
+    margin: auto;
+    padding-right: rem(60);
+    padding-left: rem(60);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}
+
+.ban__wrap {
+    background: $white;
+    padding-top: rem(66);
+    padding-bottom: rem(71);
+    padding-left: rem(95);
+    padding-right: rem(95);
+    border: rem(3) solid $boder_color;
+    border-radius: rem(25);
+
+    @include mq("sp") {
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}
+
+.ban__title {
+    font-size: rem(28);
+    border-bottom: rem(1) solid $gray;
+    padding-bottom: rem(20);
+    line-height: 1.714;
+    font-weight: $bold;
+    padding-left: rem(30);
+
+    @include mq("sp") {
+        padding-left: rem(0);
+    }
+}
+
+.ban__title span {
+    font-size: rem(18);
+    font-weight: $bold;
+    padding-left: rem(30);
+
+    @include mq("sp") {
+        display: block;
+        padding-left: rem(0);
+        font-size: rem(14);
+    }
+}
+
+.ban__list-item {
+    font-size: rem(18);
+    line-height: 2.8;
+
+    @include mq("sp") {
+        font-size: rem(16);
+        line-height: 2.175;
+    }
+}
+
+.ban__caution {
+    padding-top: rem(50);
+}
+
+.ban__br {
+    display: none;
+
+    @include mq("sp") {
+        display: block;
+    }
+}

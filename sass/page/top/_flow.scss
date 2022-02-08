@@ -1,0 +1,108 @@
+.flow-sub {
+    padding-left: rem(60);
+    padding-right: rem(60);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        margin: auto;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.flow__inner {
+    padding-top: rem(95);
+    padding-bottom: rem(113);
+
+    @include mq("sp") {
+        padding-top: rem(50);
+        padding-bottom: rem(60);
+    }
+}
+
+.flow__wrap {
+    padding-top: rem(123);
+    padding-bottom: rem(118);
+    background: $white;
+    border-radius: rem(30);
+
+    @include mq("sp") {
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(50);
+        padding-bottom: rem(60);
+    }
+}
+
+.flow__title {
+    line-height: 1.712;
+    text-align: center;
+    font-weight: $medium;
+    text-align: center;
+    font-size: rem(32);
+    position: relative;
+    top: 0;
+    left: rem(0);
+    border-width: rem(2);
+    border-bottom: rem(3) solid $text-color;
+
+    @include mq("sp") {
+        font-size: rem(28);
+    }
+}
+
+
+.flow__btn {
+    max-width: rem(640);
+    width: 100%;
+    margin: auto;
+    background: $b-btn_back;
+    padding: rem(20) rem(0);
+}
+
+.flow__text {
+    padding-top: rem(51);
+    padding-bottom: rem(44);
+    line-height: 2.125;
+    text-align: center;
+    font-size: rem(16);
+
+    @include mq("sp") {
+        padding-top: rem(45);
+        padding-bottom: rem(40);
+    }
+}
+
+.flow__text--color {
+    color: $white;
+}
+
+.flow__move-box {
+    max-width: rem(1050);
+    width: 100%;
+    margin: auto;
+    padding-top: rem(100);
+    padding-left: rem(100);
+    padding-right: rem(100);
+
+    @include mq("sp") {
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(50);
+    }
+}
+
+.flow__move-box video {
+    max-width: rem(1050);
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.flow__br {
+    display: block;
+
+    @include mq("sp") {
+        display: none;
+    }
+}

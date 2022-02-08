@@ -1,0 +1,18 @@
+.facility__inner {
+    max-width: rem(1320);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.facility__wrap {
+    padding-top: rem(70);
+}

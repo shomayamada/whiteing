@@ -1,0 +1,71 @@
+.c-card__inner {
+    margin-top: rem(70);
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+    padding-left: rem(60);
+    padding-right: rem(20);
+    background: $white;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.16);
+
+    @include mq("sp") {
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.c-card__wrap {
+    display: flex;
+
+    @include mq("sp") {
+        max-width: rem(540);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        margin: auto;
+        display: block;
+    }
+}
+
+.c-card__text-box {
+    width: 100%;
+}
+
+.c-card__picture-box {
+    max-width: rem(334);
+    width: 100%;
+    position: relative;
+    margin-right: rem(50);
+
+    @include mq("sp") {
+        max-width: rem(540);
+        margin: auto;
+    }
+}
+
+.c-card__picture-box::before {
+    content:"";
+    display: block;
+    padding-top: 75%;
+}
+
+.c-card__picture-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+    @include mq("sp") {
+        width: 100%;;
+        margin: auto;
+    }
+}
+
+.c-card__title {
+    font-size: rem(24);
+    font-weight: $bold;
+
+    @include mq("sp") {
+        padding-top: rem(20);
+    }
+}

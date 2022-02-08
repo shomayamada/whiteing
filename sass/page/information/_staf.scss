@@ -1,0 +1,119 @@
+.staf__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-top: rem(100);
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.staf__wrap {
+    padding-top: rem(70);
+}
+
+.staf__container {
+    display: flex;
+    background: $white;
+    border-radius: rem(30);
+    padding-top: rem(80);
+    padding-bottom: rem(60);
+    padding-left: rem(130);
+    padding-right: rem(130);
+
+    @include mq("sp") {
+        max-width: rem(540);
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+
+.staf__picture {
+    max-width: rem(266);
+    width: 100%;
+    position: relative;
+    margin-right: rem(50);
+
+    @include mq("sp") {
+        max-width: rem(500);
+        margin: auto;
+    }
+}
+
+.staf__picture:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.staf__picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.staf__text-box {
+    @include mq("sp") {
+        max-width: rem(500);
+        width: 100%;
+        margin: auto;
+        padding-top: rem(20);
+    }
+}
+
+.staf__position {
+    font-size: rem(22);
+    font-weight: $medium;
+}
+
+.staf__name {
+    font-size: rem(28);
+    font-weight: $medium;
+
+    @include mq("sp") {
+        font-size: rem(24);
+    }
+}
+
+.staf__name span {
+    font-size: rem(18);
+    font-weight: $normal;
+    padding-left: rem(20);
+
+    @include mq("sp") {
+        font-size: rem(14);
+        padding-left: rem(10);
+    }
+}
+
+.staf__career-box {
+    padding-top: rem(30);
+}
+
+.staf__caree {
+    font-size: rem(20);
+    font-weight: $medium;
+}
+
+.staf__content {
+    padding-top: rem(15);
+}
+
+.staf__content li {
+    font-size: rem(18);
+    line-height: 2.175;
+}

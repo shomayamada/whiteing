@@ -1,0 +1,58 @@
+.effect-list__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    padding-bottom: rem(230);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+        padding-bottom: rem(100);
+    }
+}
+
+.effect-list__wrap {
+    background: $white;
+    padding-top: rem(66);
+    padding-bottom: rem(71);
+    padding-left: rem(95);
+    padding-right: rem(95);
+    border: rem(3) solid $boder_color;
+    border-radius: rem(25);
+
+    @include mq("sp") {
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.effect-list__title {
+    font-size: rem(28);
+    border-bottom: rem(1) solid $gray;
+    padding-bottom: rem(20);
+    line-height: 1.714;
+    font-weight: $bold;
+
+    @include mq("sp") {
+        text-align: center;
+    }
+}
+
+.effect-list__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.effect-list__item {
+    width : calc(100% / 3);
+    font-size: rem(18);
+    line-height: 3;
+
+    @include mq("sp") {
+        width: 100%;
+        text-align: center;
+    }
+}

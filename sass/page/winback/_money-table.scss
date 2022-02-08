@@ -1,0 +1,119 @@
+.money-table__inner {
+    max-width: rem(1320);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-bottom: rem(60);
+    }
+}
+
+.money-table__item {
+    font-size: rem(16);
+    line-height: 1.7;
+    padding-bottom: rem(20);
+}
+
+.money-table__item:last-child {
+    padding-bottom: rem(0);
+}
+
+.money-table__item span {
+    font-size: rem(24);
+    font-size: $medium;
+}
+
+.money-table__item sup {
+    font-size: rem(16);
+}
+
+
+.moneytable {
+    padding-top: rem(30);
+
+    @include mq("sp") {
+        max-width: rem(500);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.moneytable__list {
+    padding-top: rem(50);
+
+    @include mq("sp") {
+        padding-top: rem(30);
+
+    }
+}
+
+.moneytable__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+    padding-bottom: rem(30);
+
+    @include mq("sp") {
+        display: block;
+        padding-bottom: rem(30);
+        line-height: 1.5;
+    }
+}
+
+.moneytable__number {
+    max-width: rem(100);
+    width: 100%;
+    font-size: rem(16);
+
+    @include mq("sp") {
+        padding-bottom: rem(10);
+    }
+}
+
+.moneytable__number {
+    font-size: rem(18);
+}
+
+.moneytable__number span {
+    max-width: rem(48);
+    width: 100%;
+    display: inline-block;
+    font-size: rem(22);
+}
+
+.moneytable__money {
+    width: 100%;
+    font-size: rem(16);
+}
+
+.moneytable__money span {
+    display: inline-block;
+    max-width: rem(95);
+    width: 100%;
+    font-size: rem(22);
+    letter-spacing: rem(1.8);
+    font-weight: $medium;
+    text-align: left;
+}
+
+.moneytable__money sub {
+    font-size: rem(18);
+    vertical-align: super;
+}
+
+.moneytable__text {
+    font-size: rem(14);
+    line-height: 2.3;
+
+    @include mq("sp") {
+        padding-bottom: rem(30);
+        line-height: 1.5;
+    }
+}

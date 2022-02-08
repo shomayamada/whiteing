@@ -1,0 +1,56 @@
+.fv-sub {
+    background-image: url(../img/winback-fv01.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;  
+}
+
+
+.fv__inner {
+    max-width: rem(1320);
+    width: 100%;
+    margin: auto;
+    padding-top: rem(145);
+    padding-bottom: rem(107);
+    margin-top: rem(110);
+    margin-bottom: rem(209);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+
+    @include mq("sp") {
+        max-width: rem(640);
+        margin-top: rem(60);
+        margin-bottom: rem(70);
+        padding-top: rem(60);
+        padding-bottom: rem(60);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.fv__text-box {
+    text-align: center;
+}
+
+.fv__title {
+    font-weight: $normal;
+    font-size: rem(28);
+    line-height: 1.36;
+    padding-bottom: rem(44);
+
+    @include mq("sp") {
+        padding-bottom: rem(30);
+    }
+}
+
+.fv__text {
+    font-size: rem(22);
+    line-height: 1.54545;
+
+    @include mq("sp") {
+        font-size: rem(18);
+    }
+}

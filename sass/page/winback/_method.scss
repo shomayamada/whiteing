@@ -1,0 +1,60 @@
+.method__inner {
+    max-width: rem(1320);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-bottom: rem(100);
+    }
+}
+
+.method__title {
+    font-size: rem(28);
+    font-weight: $normal;
+    text-align: center;
+    padding-bottom: rem(40);
+}
+
+.method__text {
+    font-size: rem(22);
+    line-height: 1.818181;
+    text-align: center;
+
+    @include mq("sp") {
+        font-size: rem(18);
+    }
+}
+
+.method__picture-box {
+    padding-top: rem(113);
+    display: flex;
+
+    @include mq("sp") {
+        display: block;
+        padding-top: rem(50);
+    }
+}
+
+.method__picture {
+    width: calc(33.3333333% - #{rem(25)} * 2 / 3);
+    margin-right: rem(25);
+
+    @include mq("sp") {
+        width: 100%;
+        margin-bottom: rem(30);
+    }
+}
+
+.method__picture:last-child {
+    margin-right: rem(0);
+
+    @include mq("sp") {
+        margin-bottom: rem(0);
+    }
+}

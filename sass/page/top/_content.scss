@@ -1,0 +1,77 @@
+.content__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__box {
+    background-image: url(../img/content_white.jpg);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 50%;
+    padding-top: rem(79);
+    padding-bottom: rem(83);
+    display: flex;
+    flex-direction: column;
+
+    @include mq("sp") {
+        max-width: rem(540);
+        min-height: rem(560);
+        width: 100%;
+        margin: auto;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.content_back02 {
+    background-image: url(../img/content_dental.jpg);
+}
+
+.content_back03 {
+    background-image: url(../img/content__ntroduction.jpg);
+}
+
+.content_back04 {
+    background-image: url(../img/content_question.jpg);
+}
+
+.content__title {
+    font-size: rem(24);
+    font-weight: $normal;
+    padding-bottom: rem(41);
+    text-align: center;
+}
+
+.content__box:nth-child(3) .content__text {
+    padding-bottom: rem(154.38);
+}
+
+.content__text {
+    max-width: rem(459);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: rem(18);
+    font-weight: $normal;
+    padding-bottom: rem(62);
+    line-height: 1.7111;
+    flex: 2;
+}
+
+.content__btn {
+    max-width: rem(435);
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: rem(20) rem(0);
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.content__text--color {
+    color: $b-btn_back;
+}

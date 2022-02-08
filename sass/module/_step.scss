@@ -1,0 +1,43 @@
+.step__container {
+    display: flex;
+    justify-content: center;
+}
+
+.step__box {
+    display: flex;
+}
+
+.step_heading {
+    font-size: rem(32);
+    font-weight: $medium;
+}
+
+.step_heading:first-child {
+    padding-top: rem(7);
+}
+
+.step__heading-box {
+    padding-right: rem(20);
+}
+
+.step__ttl {
+    font-size: rem(32);
+    font-weight: $medium;
+    line-height: 1.218;
+}
+
+.step__content {
+    padding-left: rem(50);
+}
+
+.step__content-box {
+    display: flex;
+}
+
+.step__comment-box {
+    padding-right: rem(65);
+}
+
+.step__ttl:first-child {
+    padding-top: rem(7);
+}

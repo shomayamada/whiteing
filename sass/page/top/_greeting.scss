@@ -1,0 +1,55 @@
+.greeting-sub {
+    padding-top: rem(74);
+    padding-bottom: rem(100);
+
+    @include mq("sp") {
+        padding-top: rem(40);
+        padding-bottom: rem(60);
+    }
+}
+
+
+.greeting_inner {
+    background-image: url(../img/greeting_back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    max-width: rem(1200);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-top: rem(110);
+    padding-bottom: rem(110);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(50);
+        padding-bottom: rem(60);
+    }
+}
+
+.greeting__wrap {
+    text-align: center;
+}
+
+.greeting__text {
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: 2.222222;
+    padding-top: rem(30);
+    padding-bottom: rem(48);
+
+    @include mq("sp") {
+        font-size: rem(14);
+        padding-top: rem(50);
+    }
+}
+
+.greeting__name {
+    font-size: rem(18);
+    font-weight: $medium;
+}

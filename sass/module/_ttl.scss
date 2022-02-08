@@ -1,0 +1,24 @@
+.ttl {
+    font-weight: $medium;
+    text-align: center;
+    font-size: rem(32);
+    position: relative;
+    top: 0;
+    left: rem(0);
+
+    @include mq("sp") {
+        font-size: rem(28);
+    }
+}
+
+.ttl::before {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    bottom: rem(-50);
+    content: '';
+    width: rem(70);
+    border-bottom: rem(3) solid $text-color;
+}

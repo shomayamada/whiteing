@@ -1,0 +1,189 @@
+.footer__inner {
+    padding-top: rem(143);
+    padding-bottom: rem(50);
+    margin-right: $margin-pc;
+    margin-left: $margin-pc;
+
+    @include mq("sp") {
+        padding-top: rem(60);
+        padding-bottom: rem(50);
+    }
+}
+
+.footer__title {
+    text-align: center;
+}
+
+.footer__btn-box {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: rem(73);
+    padding: rem(89) rem(60);
+    background: $section_back;
+    border-radius: rem(15);
+
+    @include mq("sp") {
+        display: block;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(50);
+        padding-bottom: rem(60);
+    }
+}
+
+.footer__mail-btn,
+.footer__tell-box {
+    max-width: rem(850);
+    width: 100%;
+
+    @include mq("sp") {
+        max-width: none;
+    }
+}
+
+
+.footer__mail-btn {
+    padding-right: rem(39);
+
+    @include mq("sp") {
+        padding-right: rem(0);
+    }
+}
+
+.footer__tell-box {
+    padding-left: rem(39);
+
+    @include mq("sp") {
+        padding-left: rem(0);
+    }
+}
+
+.footer__mail-btn a {
+    padding: rem(42.954) rem(0);
+
+    @include mq("sp") {
+        padding: rem(30.954) rem(20);
+    }
+}
+
+.footer__tell-btn a {
+    padding: rem(32) rem(0);
+
+    @include mq("sp") {
+        padding: rem(20) rem(0);
+    }
+}
+
+.footer__mail-btn a,
+.footer__tell-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: rem(100);
+}
+
+.footer__mail-icon img,
+.footer__tell-icon img {
+    max-width: rem(44);
+    width: 100%;
+    height: auto;
+
+    @include mq("sp") {
+        max-width: rem(30);
+    }
+}
+
+.footer__btn-text {
+    padding-left: rem(30);
+}
+
+.footer__tell-text {
+    padding: rem(0) rem(20);
+    font-size: rem(16);
+    text-align: center;
+    line-height: 3;
+
+    @include mq("sp") {
+        line-height: 1.7;
+        padding: rem(20) rem(0);
+    }
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $section_back;
+    padding: rem(35) rem(60);
+    border-radius: rem(15);
+
+    @include mq("sp") {
+        display: block;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(50);
+        padding-bottom: rem(60);
+    }
+}
+
+.footer_logo {
+    max-width: rem(280);
+    width: 100%;
+
+    @include mq("sp") {
+        max-width: rem(380);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.footer_logo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer__comment {
+    text-align: right;
+    font-size: rem(16);
+    line-height: 3;
+    padding-top: rem(174);
+
+    @include mq("sp") {
+        font-size: rem(14);
+        text-align: center;
+        padding-top: rem(50);
+    }
+}
+
+.footer__menu {
+    display: flex;
+    margin-left: rem(30);
+
+    @include mq("sp") {
+        display: block;
+        text-align: center;
+        margin-left: rem(0);
+        padding-top: rem(30);
+    }
+}
+
+.footer__menu-item {
+    margin-right: rem(20);
+    font-size: rem(12);
+
+    @include mq("sp") {
+        margin-right: rem(0);
+        font-size: rem(16);
+        line-height: 3.175;
+    }
+}
+
+.footer__menu-item:last-child {
+    margin-right: rem(0);
+}
+
+.footer__comment a {
+    border-bottom: rem(1) solid $text-color;
+}

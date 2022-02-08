@@ -1,0 +1,45 @@
+.self-sub {
+    background-image: url(../img/self__back-pc.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin-left: $margin-pc;
+    margin-right: $margin-pc;
+
+    @include mq("sp") {
+        background-image: url(../img/self__back-sp.jpg;);
+        margin-right: rem(0);
+        margin-left: rem(0);
+    }
+}
+
+.mv-bottom__inner {
+    max-width: rem(1200);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-top: rem(100);
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-top: rem(60);
+        padding-bottom: rem(70);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.mv-bottom {
+    text-align: center;
+    font-size: rem(22);
+    line-height: 1.8;
+
+    @include mq("sp") {
+        font-size: rem(16);
+    }
+}

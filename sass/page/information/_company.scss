@@ -1,0 +1,84 @@
+.company__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.company__table {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+}
+
+.company__wrap {
+    margin-top: rem(70);
+    padding: rem(70) rem(200);
+    background: $white;
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.company__th,
+.company__td {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    padding: rem(38) rem(0);
+}
+
+.company__table {
+    border-collapse: collapse;
+}
+
+.company__td {
+    border-bottom: rem(1) solid #000;
+    font-size: rem(16);
+    width: 20%;
+    font-weight: $bold;
+    text-align: center;
+    width: rem(169);
+    font-size: rem(19);
+
+}
+
+.company__th {
+    text-align: left;
+    border-bottom: rem(1) solid $rightgray;
+    padding-left: rem(20);
+    font-size: rem(18);
+    font-weight: $medium;
+    line-height: 1.17;
+
+    @include mq("sp") {
+        font-size: rem(16);
+    }
+}
+
+.company__map {
+    padding-top: rem(19);
+    height: rem(231);
+}
+
+.company__tr:last-child .company__td {
+    border-bottom: none;
+}
+
+.company__tr:last-child .company__th {
+    border-bottom: none;
+
+}
+
+.company__th:last-child {
+    line-height: 2.11111;
+}

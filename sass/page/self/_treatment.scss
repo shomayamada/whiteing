@@ -1,0 +1,137 @@
+.treatment__inner {
+    max-width: rem(1200);
+    width: 100%;
+    margin: auto;
+    padding-left: rem(60);
+    padding-right: rem(60);
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(540);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(60);
+        padding-bottom: rem(70);
+    }
+}
+
+.treatment__wrap {
+    padding-top: rem(120);
+}
+
+.treatment__step {
+    padding-right: rem(20);
+}
+
+.treatment__step-heading {
+    padding-bottom: rem(140);
+}
+
+.treatment__content-comment {
+    padding-right: rem(74);
+}
+
+.treatment__comment {
+    padding-bottom: rem(66);
+}
+
+.treatment__comment:first-child {
+    padding-bottom: rem(40);
+}
+
+.treatment__comment:nth-child(5) {
+    padding-bottom: rem(70);
+}
+
+.treatment__comment:last-child {
+    padding-bottom: rem(0);
+}
+
+.treatment__boder {
+    max-width: rem(54);
+    height: rem(995);
+}
+
+.treatment__boder img {
+    max-width: rem(54);
+    height: rem(995);
+    object-fit: cover;
+}
+
+.treatment__content-text {
+    max-width: rem(483);
+    width: 100%;
+    font-size: rem(18);
+    line-height: 1.7778;
+    padding-top: rem(10);
+}
+
+.treatment__picture {
+    max-width: rem(217);
+    width: 100%;
+    padding-bottom: rem(50);
+
+    @include mq("sp") {
+        max-width: rem(500);
+        margin: auto;
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
+}
+
+.treatment__picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.caution {
+    @include mq("sp") {
+        padding-top: rem(50);
+    }
+}
+
+.caution__text {
+    font-size: rem(20);
+    line-height: 2;
+
+    @include mq("sp") {
+        font-size: rem(14);
+        line-height: 2;
+    }
+}
+
+.pc-treatment__wrap {
+    display: block;
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+
+.sp-treatment {
+    display: none;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.sp-treatment__warp {
+    padding-top: rem(70);
+}
+
+.sp-treatment__step {
+    font-size: rem(24);
+    font-weight: $medium;
+}
+
+.sp-treatment__title {
+    font-size: rem(22);
+    font-weight: $medium;
+}
+
+.sp-treatment__text {
+    font-size: rem(16);
+    padding-top: rem(20);
+    line-height: 1.7;
+}

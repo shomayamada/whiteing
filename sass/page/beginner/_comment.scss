@@ -1,0 +1,90 @@
+.beginner-coment__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    padding-top: rem(126);
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+        padding-bottom: rem(60);
+    }
+}
+
+.beginner-coment__wrap {
+    background: $white;
+    padding-top: rem(46);
+    padding-bottom: rem(51);
+    padding-left: rem(95);
+    padding-right: rem(95);
+    border: rem(3) solid $boder_color;
+    border-radius: rem(25);
+
+    @include mq("sp") {
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}
+
+.beginner-coment__title {
+    font-size: rem(28);
+    border-bottom: rem(1) solid $gray;
+    padding-bottom: rem(20);
+    line-height: 1.714;
+    font-weight: $bold;
+
+    @include mq("sp") {
+        font-size: rem(22);
+    }
+}
+
+.beginner-coment__text {
+    font-size: rem(16);
+    padding-top: rem(24.5);
+    line-height: 2;
+}
+
+.beginner-coment__picture-inner {
+    max-width: rem(1320);
+    width: 100%;
+    margin: auto;
+    padding-top: rem(57);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+
+    @include mq("sp") {
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+
+}
+
+.beginner-coment__picture-box {
+    display: flex;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.beginner-coment__picture {
+    width: calc(33.3333333% - #{rem(25)} * 2 / 3);
+    margin-right: rem(25);
+
+    @include mq("sp") {
+        width: 100%;
+        padding-bottom: rem(30);
+    }
+}
+
+.beginner-coment__picture:last-child {
+    margin-right: rem(0);
+
+    @include mq("sp") {
+        padding-bottom: rem(0);
+    }
+}

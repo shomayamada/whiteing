@@ -1,0 +1,53 @@
+.mv-top__sub {
+    background-image: url(../img/top__back-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin-left: $margin-pc;
+    margin-right: $margin-pc;
+    height: rem(589);
+    position: relative;
+
+    @include mq("sp") {
+        background-image: url(../img/top__back-sp.jpg);
+        margin-right: rem(0);
+        margin-left: rem(0);
+    }
+}
+
+.mv__inner {
+    height: inherit;
+    padding-left: rem(60);
+    padding-right: rem(60);
+}
+
+.mv__title-box {
+    position: absolute;
+    top: rem(300);
+    left: rem(60);
+    color: $orange;
+
+    @include mq("sp") {
+        left: rem(20);
+    }
+}
+
+.mv__title {
+    font-size: rem(60);
+    font-weight: $bold;
+    line-height: 1.8;
+
+    @include mq("sp") {
+        font-size: rem(26);
+    }
+}
+
+.mv__sub-title {
+    font-size: rem(45);
+    font-weight: $normal;
+
+    @include mq("sp") {
+        font-size: rem(24);
+    }
+}

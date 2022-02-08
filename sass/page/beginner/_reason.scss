@@ -1,0 +1,95 @@
+.reason__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    padding-bottom: rem(168);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+        padding-bottom: rem(60);
+    }
+}
+
+.reason__wrap {
+    padding-top: rem(70);
+}
+
+.reason__continer {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    padding-left: rem(75);
+    padding-right: rem(100);
+    margin-bottom: rem(40);
+    background: $white;
+    display: flex;
+
+    @include mq("sp") {
+        display: block;
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}
+
+.reason__continer:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.reason__continer:last-child {
+    justify-content: space-between;
+    margin-bottom: rem(0);
+}
+
+.reason__picture {
+    max-width: rem(334);
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-right: rem(82);
+
+    @include mq("sp") {
+        max-width: none;
+    }
+}
+
+.reason__picture:before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    /* 高さを幅の75%に固定 */
+}
+
+.reason__picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reason__continer:nth-child(2n) .reason__picture {
+    margin-right: rem(0);
+    margin-left: rem(82);
+
+    @include mq("sp") {
+        margin-left: rem(0);
+    }
+}
+
+.reason__sub-title {
+    font-size: rem(20);
+    line-height: 1.58333;
+    padding-top: rem(26);
+    padding-bottom: rem(31);
+}
+
+.reason__text {
+    font-size: rem(16);
+    line-height: 2.125;
+}

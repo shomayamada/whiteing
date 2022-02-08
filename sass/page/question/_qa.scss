@@ -1,0 +1,86 @@
+.qa__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    padding-top: rem(100);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+        padding-top: rem(60);
+    }
+}
+
+.qa__title {
+    letter-spacing: rem(10);
+}
+
+.qa__container {
+    padding-top: rem(40);
+}
+
+.qa__wrap {
+    padding-top: rem(32);
+}
+
+.qa__heading-box,
+.qa__answer-box {
+    display: flex;
+}
+
+.qa__heading-box {
+    background: $dark_orage;
+    color: $white;
+    padding-top: rem(25);
+    padding-bottom: rem(25);
+    padding-left: rem(70);
+
+    @include mq("sp") {
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+}
+
+.qa__symbol {
+    font-size: rem(22);
+    font-weight: $bold;
+}
+
+.qa__heading {
+    font-size: rem(18);
+    font-weight: $bold;
+}
+
+.qa__answer-box {
+    background: $white;
+    margin-top: rem(10);
+    padding-top: rem(25);
+    padding-bottom: rem(40);
+    padding-left: rem(70);
+    padding-right: rem(70);
+
+    @include mq("sp") {
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+}
+
+.qa__answer-text {
+    font-size: rem(18);
+    line-height: 1.777778;
+
+    @include mq("sp") {
+        font-size: rem(16);
+    }
+}
+
+.qa__symbol {
+    padding-right: rem(30);
+}
+
+.qa__symbol--color {
+    color: #E2613A;
+}

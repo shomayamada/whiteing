@@ -1,0 +1,41 @@
+.btn__sub {
+    max-width: rem(368);
+    width: 100%;
+    height: rem(74);
+    position: relative;
+}
+
+.btn__inner {
+    background: $btn_color;
+    padding-top: rem(24.5);
+    padding-bottom: rem(24.5);
+    padding-left: rem(45);
+    padding-right: rem(30);
+    border-radius: rem(15);
+}
+
+.btn__box {
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.btn__box img {
+    max-width: rem(34);
+    width: 100%;
+    height: rem(25);
+}
+
+.btn__text {
+    color: $white;
+    font-size: rem(16);
+    margin-left: rem(10);
+    margin-right: rem(10);
+}
+
+.btn__text span {
+    position: absolute;
+    top: rem(40);
+    right: rem(10);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,56 @@
+// 色
+$background: #FFF7F5; // 背景
+$text-color: #333; // テキスト色
+$btn_color: #FBBBA7;
+$boder_color :#FBBBA7;
+$orange :#FF9879;
+$tag : #FFAC93;
+$dark_orage :#F0A48C;
+$right_orage :#FFE8E0;
+$b-btn_back :#FF9D80;
+$section_back :#FFF4F0;
+$white :#FFF;
+$gray : #707070;
+$rightgray :#B7B7B7;
+
+// マウスホバー
+$opacity: 0.7; // 透過度
+
+// フォント
+$base-font-family:'Noto Sans JP',sans-serif; // ベースフォント
+$second-font-family: 'Noto Serif JP',serif;
+$font-size-base: 16px; // ベースフォントサイズ
+$font-weight-base: 300; // ベースフォントウェイト
+$lh: 1.6; // ベース行間
+
+
+body {
+	font-family: $base-font-family;
+	font-weight: 400;
+	background: $background;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$medium:500;
+$dolebold :600;
+$bold: 700;
+
+// ---
+// レイアウト
+// ---
+$inner: 1320px; // インナー幅
+$sp: 768px; // タブレットサイズ
+$tab: 1320px; // タブレットサイズ
+$pc: 1440px; // パソコン幅
+
+// ブレークポイント（PC基準）
+$breakpoints: ("sp": "screen and (max-width: #{$sp - 1})",
+	"tab": "screen and (max-width: #{$tab - 1 })",
+	"pc": "screen and (min-width: #{$pc})",
+);
+
+$margin-pc :30px;
+$padding-pc: 100px; // タブレット時の余白
+$padding-sp: 20px; // スマホ時の余白

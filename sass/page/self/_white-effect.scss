@@ -1,0 +1,13 @@
+.white-effect__inner {
+    max-width: rem(1200);
+    width: 100%;
+    margin: auto;
+    padding-left: rem(60);
+    padding-right: rem(60);
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}

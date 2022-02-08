@@ -1,0 +1,151 @@
+.measures-sub {
+    width: 100%;
+    margin: auto;
+    padding-top: rem(72);
+}
+
+.measures__inner {
+    max-width: rem(1520);
+    width: 100%;
+    margin: auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+
+    @include mq("sp") {
+        max-width: rem(640);
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}
+
+.measures__wrap {
+    width: 100%;
+    border-bottom: rem(2) solid $gray;
+}
+
+.measures__wrap-inner {
+    margin-left: rem(70);
+    margin-right: rem(70);
+
+    @include mq("sp") {
+        margin-right: rem(0);
+        margin-left: rem(0);
+    }
+}
+
+.measures__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: rem(28);
+    font-weight: $medium;
+    line-height: 1.7;
+    letter-spacing: rem(1.56);
+    color: $orange;
+
+    @include mq("sp") {
+        justify-content: center;
+        font-size: rem(22);
+    }
+}
+
+.measures__title:before,
+.measures__title:after {
+    content: "";
+    height: rem(2);
+    flex-grow: 1;
+    background-color: $gray;
+}
+
+.measures__title:before {
+    margin-right: rem(44);
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+
+.measures__title:after {
+    margin-left: rem(44);
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+
+.measures__text {
+    text-align: center;
+    font-size: rem(16);
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+
+    @include mq("sp") {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+    }
+}
+
+.measures__container {
+    max-width: rem(1534);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    background: $right_orage;
+    padding: rem(30) rem(50);
+    border-radius: rem(50);
+    margin-bottom: rem(50);
+
+    @include mq("sp") {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+.measures__picture-box {
+    max-width: rem(295);
+    width: 100%;
+    margin-right: rem(37);
+
+    @include mq("sp") {
+        max-width: none;
+        width: calc(50% - #{rem(13)});
+        margin-right: rem(25);
+        margin-top: rem(35);
+    }
+}
+
+.measures__picture-box:nth-child(-n+2) {
+
+    @include mq("sp") {
+        margin-top: rem(0);
+    }
+}
+
+.measures__picture-box:nth-child(2n) {
+
+    @include mq("sp") {
+        margin-right: rem(0);
+    }
+}
+
+.measures__picture-box:last-child {
+
+    margin-right: rem(0);
+}
+
+.measures__picture-box:last-child {
+    margin-right: rem(0);
+}
+
+.measures__picture {
+    margin: auto;
+}
+
+.measures__picture-text {
+    padding-top: rem(20);
+    font-size: rem(14);
+}

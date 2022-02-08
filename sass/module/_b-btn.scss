@@ -1,0 +1,17 @@
+.b-btn {
+    border-radius: rem(50);
+    position: relative;
+}
+
+.b-btn__text {
+    font-size: rem(16);
+    line-height: 1.9;
+    text-align: center;
+}
+
+.b-btn__text span {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+}
