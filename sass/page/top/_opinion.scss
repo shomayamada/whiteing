@@ -29,8 +29,11 @@
 }
 
 .opinion__card {
+    display: flex;
+    flex-direction: column;
     max-width: rem(375);
     width: 100%;
+    height: auto;
     background: $white;
     border-radius: rem(25);
     padding-top: rem(49);
@@ -61,10 +64,15 @@
     }
 }
 
-.opinion__picture img {
+.opinion__picture {
     max-width: rem(191);
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.opinion__picture img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .opinion__title {

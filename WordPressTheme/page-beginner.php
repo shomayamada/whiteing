@@ -156,11 +156,11 @@
                     <div class="receive__picture">
                         <img src=<?php echo get_template_directory_uri(); ?>/assets/img/receive01.jpg"" alt="歯">
                     </div>
-                    <div class="b-btn flow__btn">
-                        <a href="#">
+                    <a href="#">
+                        <div class="b-btn flow__btn">
                             <p class="b-btn__text flow__text--color">セルフホワイトニングについて<span>＞</span></p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -173,11 +173,11 @@
                     <div class="receive__picture">
                         <img src=<?php echo get_template_directory_uri(); ?>/assets/img/receive02.jpg"" alt="歯">
                     </div>
-                    <div class="b-btn flow__btn">
-                        <a href="#">
+                    <a href="#">
+                        <div class="b-btn flow__btn">
                             <p class="b-btn__text flow__text--color">デンタルエステについて<span>＞</span></p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

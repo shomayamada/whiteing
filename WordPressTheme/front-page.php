@@ -96,11 +96,11 @@
                     <p class="news__comment">今年も○○○○○では雛祭りを開催いたします！</p>
                 </div>
             </div>
+            <a href="#">
             <div class="b-btn news__btn">
-                <a href="#">
                     <p class="b-btn__text news__text--color">記事一覧を見る<span>＞</span></p>
-                </a>
             </div>
+            </a>
         </div>
     </div>
 </section>
@@ -148,11 +148,11 @@
                 現役の歯科衛生士がオーナーを勤めるホワイトニングサロンとして、<br class="flow__br">
                 皆様のお口の健康をサポートいたします。
             </p>
-            <div class="b-btn flow__btn">
-                <a href="#">
+            <a href="#">
+                <div class="b-btn flow__btn">
                     <p class="b-btn__text flow__text--color">当サロンについて<span>＞</span></p>
-                </a>
-            </div>
+                </div>
+            </a>
             <div class="flow__move-box">
                 <video src="<?php echo get_template_directory_uri(); ?>/assets/move/move.mp4" controls></video>
             </div>
@@ -166,11 +166,11 @@
             <div class="content__box">
                 <h4 class="content__title">ホワイトニング</h4>
                 <p class="content__text">当サロンのホワイトニングの特徴をご紹介します。<br>料金・施術の流れもご説明いたします。</p>
-                <div class="b-btn content__btn">
-                    <a href="/self/">
+                <a href="/self/">
+                    <div class="b-btn content__btn">
                         <p class="b-btn__text content__text--color">料金・施術について<span>＞</span></p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="content__box content_back02">
@@ -179,11 +179,11 @@
                     最新マシンの「Wimback」を使用し、お顔周りの表情筋や咬筋などをほぐし、ほうれい線やたるみの解消を行い、口腔周囲機能の改善を目指します。<br>
                     顎関節症や顎の痛みでお悩みの方にもおすすめです。
                 </p>
-                <div class="b-btn content__btn">
-                    <a href="/winback/">
+                <a href="/winback/">
+                    <div class="b-btn content__btn">
                         <p class="b-btn__text content__text--color">Wimbackについて<span>＞</span></p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="content__box content_back03">
@@ -191,11 +191,11 @@
                 <p class="content__text">
                     当サロンのについて紹介をいたします。
                 </p>
-                <div class="b-btn content__btn">
-                    <a href="/information/">
+                <a href="/information/">
+                    <div class="b-btn content__btn">
                         <p class="b-btn__text content__text--color">ホワイトニングサロンベルについて<span>＞</span></p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="content__box content_back04">
@@ -203,11 +203,11 @@
                 <p class="content__text">
                     お客様からよくいただく質問をご紹介いたします。
                 </p>
-                <div class="b-btn content__btn">
-                    <a href="/question/">
+                <a href="/question/">
+                    <div class="b-btn content__btn">
                         <p class="b-btn__text content__text--color">Q & Aを見る<span>＞</span></p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
