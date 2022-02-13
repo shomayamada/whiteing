@@ -90,17 +90,27 @@
         <div class="news__wrap">
             <h3 class="news__title">最新情報</h3>
             <div class="news__container">
-                <div class="news__content">
-                    <div class="news__day">2021.03.03</div>
-                    <div class="news__category">BLOG</div>
-                    <p class="news__comment">今年も○○○○○では雛祭りを開催いたします！</p>
-                </div>
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : ?>
+                        <?php the_post(); ?>
+                        <a href="<?php the_permalink() ?>">
+                            <ul class="news__content">
+                                <li class="news__day"><?php the_time(); ?></li>
+                                <li class="news__category"><?php $cat = get_the_category();
+                                                            $cat = $cat[0]; {
+                                                                echo $cat->cat_name;
+                                                            } ?></li>
+                                <li class="news__heading"><?php the_title(); ?></li>
+                            </ul>
+                        </a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
-            <a href="#">
-            <div class="b-btn news__btn">
+            <div class="news__btn-box">
+                <a href="<?php echo esc_url(home_url('/news/')); ?>" class="b-btn news__btn news__btn--color">
                     <p class="b-btn__text news__text--color">記事一覧を見る<span>＞</span></p>
+                </a>
             </div>
-            </a>
         </div>
     </div>
 </section>
@@ -120,7 +130,7 @@
                 <div class="opinion__picture">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/boys.png" alt="男性">
                 </div>
-                <h4 class="opinion__title">歯科クリニックとの連携</h4>
+                <h4 class="opinion__title">歯科クリニックとの連携<br>&nbsp;</h4>
                 <p class="opinion__text">隣接する「かなまる歯科クリニック」との連携により、歯科に関するお悩み事に
                     お応えいたします。</p>
             </div>
@@ -141,18 +151,19 @@
 <section class="flow flow-sub">
     <div class="flow__inner">
         <div class="flow__wrap">
-            <h3 class="flow__title ">セルフホワイトニングから、デンタルエステまで</h3>
+            <h3 class="flow__title ttl">セルフホワイトニングから、デンタルエステまで</h3>
             <p class="flow__text">
                 ホワイトニングサロンベルは最新マシンを利用したセルフホワイトニングをはじめ、<br class="flow__br">
                 肩凝りや顎関節症といった歯の関係する症状の解消までお手伝いするサロンです。<br>
                 現役の歯科衛生士がオーナーを勤めるホワイトニングサロンとして、<br class="flow__br">
                 皆様のお口の健康をサポートいたします。
             </p>
-            <a href="#">
-                <div class="b-btn flow__btn">
+            <div class="flow__btn-box">
+                <a href="<?php echo esc_url(home_url('/information/')); ?>" class="b-btn flow__btn flow__btn--color">
                     <p class="b-btn__text flow__text--color">当サロンについて<span>＞</span></p>
-                </div>
-            </a>
+                </a>
+            </div>
+
             <div class="flow__move-box">
                 <video src="<?php echo get_template_directory_uri(); ?>/assets/move/move.mp4" controls></video>
             </div>
@@ -166,11 +177,11 @@
             <div class="content__box">
                 <h4 class="content__title">ホワイトニング</h4>
                 <p class="content__text">当サロンのホワイトニングの特徴をご紹介します。<br>料金・施術の流れもご説明いたします。</p>
-                <a href="/self/">
-                    <div class="b-btn content__btn">
+                <div class="content__btn-box">
+                    <a href="<?php echo home_url('/self/'); ?>" class="b-btn content__btn content__btn--color">
                         <p class="b-btn__text content__text--color">料金・施術について<span>＞</span></p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
             <div class="content__box content_back02">
@@ -179,11 +190,11 @@
                     最新マシンの「Wimback」を使用し、お顔周りの表情筋や咬筋などをほぐし、ほうれい線やたるみの解消を行い、口腔周囲機能の改善を目指します。<br>
                     顎関節症や顎の痛みでお悩みの方にもおすすめです。
                 </p>
-                <a href="/winback/">
-                    <div class="b-btn content__btn">
+                <div class="content__btn-box">
+                    <a href="<?php echo home_url('/winback/'); ?>" class="b-btn content__btn content__btn--color">
                         <p class="b-btn__text content__text--color">Wimbackについて<span>＞</span></p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
             <div class="content__box content_back03">
@@ -191,11 +202,11 @@
                 <p class="content__text">
                     当サロンのについて紹介をいたします。
                 </p>
-                <a href="/information/">
-                    <div class="b-btn content__btn">
+                <div class="content__btn-box">
+                    <a href="<?php echo home_url('/information/'); ?>" class="b-btn content__btn content__btn--color">
                         <p class="b-btn__text content__text--color">ホワイトニングサロンベルについて<span>＞</span></p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
             <div class="content__box content_back04">
@@ -203,11 +214,11 @@
                 <p class="content__text">
                     お客様からよくいただく質問をご紹介いたします。
                 </p>
-                <a href="/question/">
-                    <div class="b-btn content__btn">
+                <div class="content__btn-box">
+                    <a href="<?php echo home_url('/question/'); ?>" class="b-btn content__btn content__btn--color">
                         <p class="b-btn__text content__text--color">Q & Aを見る<span>＞</span></p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

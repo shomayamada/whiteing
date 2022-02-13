@@ -44,20 +44,31 @@
     top: 0;
     left: rem(0);
     border-width: rem(2);
-    border-bottom: rem(3) solid $text-color;
 
     @include mq("sp") {
-        font-size: rem(28);
+        font-size: rem(24);
     }
 }
 
+.flow__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow__btn--color {
+    background: $b-btn_back;
+}
 
 .flow__btn {
     max-width: rem(640);
     width: 100%;
-    margin: auto;
-    background: $b-btn_back;
     padding: rem(20) rem(0);
+    border-radius: rem(50);
+}
+
+.flow__btn:hover {
+    opacity: 0.7;
 }
 
 .flow__text {

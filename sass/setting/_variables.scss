@@ -17,8 +17,10 @@ $rightgray :#B7B7B7;
 $opacity: 0.7; // 透過度
 
 // フォント
-$base-font-family:'Noto Sans JP',sans-serif; // ベースフォント
-$second-font-family: 'Noto Serif JP',serif;
+$base-font-family:'Noto Sans JP',
+sans-serif; // ベースフォント
+$second-font-family: 'Noto Serif JP',
+serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 300; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
@@ -41,12 +43,14 @@ $bold: 700;
 // レイアウト
 // ---
 $inner: 1320px; // インナー幅
+$sm: 600px; // スマホサイズ
 $sp: 768px; // タブレットサイズ
 $tab: 1320px; // タブレットサイズ
 $pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）
 $breakpoints: ("sp": "screen and (max-width: #{$sp - 1})",
+	"sm": "screen and (max-width: #{$sm - 1 })",
 	"tab": "screen and (max-width: #{$tab - 1 })",
 	"pc": "screen and (min-width: #{$pc})",
 );

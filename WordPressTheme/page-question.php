@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('page'); ?>
 
 <section class="question-mv question-sub mv-underlayer">
     <div class="mv-underlayer__inner">
@@ -96,4 +96,4 @@
         </div>
 </section>
 
-<?php get_footer(); ?>
+<?php get_footer('page'); ?>

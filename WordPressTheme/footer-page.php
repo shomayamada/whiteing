@@ -4,8 +4,8 @@
         <div class="footer__btn-box">
             <div class="b-btn footer__mail-btn">
                 <a href="https://airrsv.net/white-belle/calendar">
-                    <div class="footer__mail-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mail-orage_icon.png" alt="メールアイコン">
+                    <div class="footer__beauty-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Beauty.png" alt="ホットペッパービューティー">
                     </div>
                     <p class="b-btn__text footer__btn-text">24時間ネット予約</p>
                 </a>
@@ -44,7 +44,6 @@
     </div>
 </footer>
 
-<!-- JavaScript -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.js"></script>
 <?php wp_footer(); ?>

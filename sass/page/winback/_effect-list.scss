@@ -44,6 +44,15 @@
 .effect-list__list {
     display: flex;
     flex-wrap: wrap;
+    max-width: rem(800);
+    width: 100%;
+    margin: auto;
+    padding-top: rem(30);
+
+    @include mq("sp") {
+        max-width: none;
+        padding-top: rem(0);
+    }
 }
 
 .effect-list__item {

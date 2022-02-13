@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- ファビコン -->
-  <link rel="apple-touch-icon" href="favicon.png">
   <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,23 +51,23 @@
   <?php wp_body_open(); ?>
   <header class="header header-sub">
     <div class="header__inner">
-      <div class="header__nav">
-        <div class="logo">
-          <div class="logo__item">
-            <a class="logo__link" href="<?php echo esc_url(home_url('//')); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo.jpg" alt="" class="logo__img">
-            </a>
+      <ul class="header__nav">
+        <li calss="">
+          <div class="logo">
+            <div class="logo__item">
+              <a class="logo__link" href="<?php echo esc_url(home_url('//')); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo.jpg" alt="" class="logo__img">
+              </a>
+            </div>
           </div>
-        </div>
+        </li>
 
-
-        <div class="header__right">
+        <li class="header__btn">
           <div class="instagram">
             <a href="https://www.instagram.com/whitening_belle/">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.png" alt="インスタグラム">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram.png" alt="インスタグラム">
             </a>
           </div>
-
           <div class="btn btn__sub header__btn--leyout">
             <a href="https://airrsv.net/white-belle/calendar">
               <div class="btn__inner">
@@ -80,29 +78,28 @@
               </div>
             </a>
           </div>
-
-          <!-- ハンバーガーメニュー -->
-          <div class="header__menu">
-            <div class="js-cp-header03__hamburger-button header__hamburger-button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="js-cp-header03__hamburger-content header__hamburger-content">
-              <nav>
-                <ul class="header__hamburger-items">
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('//')); ?>">ホーム</a></li>
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/beginner/')); ?>">はじめての方へ</a></li>
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/self/')); ?>">セルフホワイトニング</a></li>
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/winback/')); ?>">Winbackによるデンタルエステ</a></li>
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/question/')); ?>">よくある質問</a></li>
-                  <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/information/')); ?>">店舗情報</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- /ハンバーガーメニュー -->
-          </div>
+        </li>
+      </ul>
+      <!-- ハンバーガーメニュー -->
+      <div class="header__menu">
+        <div class="js-cp-header03__hamburger-button header__hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="js-cp-header03__hamburger-content header__hamburger-content">
+          <nav>
+            <ul class="header__hamburger-items">
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('//')); ?>">ホーム</a></li>
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/beginner/')); ?>">はじめての方へ</a></li>
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/self/')); ?>">セルフホワイトニング</a></li>
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/winback/')); ?>">Winbackによるデンタルエステ</a></li>
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/question/')); ?>">よくある質問</a></li>
+              <li class="header__hamburger-item"><a href="<?php echo esc_url(home_url('/information/')); ?>">店舗情報</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /ハンバーガーメニュー -->
       </div>
     </div>
   </header>

@@ -31,9 +31,10 @@
 .opinion__card {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
     max-width: rem(375);
     width: 100%;
-    height: auto;
     background: $white;
     border-radius: rem(25);
     padding-top: rem(49);

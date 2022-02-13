@@ -83,6 +83,10 @@
 
 .sp-treatment-flow__warp {
     padding-bottom: rem(50);
+
+    @include mq("sp") {
+        display: flex;
+    }
 }
 
 .sp-treatment-flow__warp:last-child {
@@ -99,4 +103,9 @@
     font-weight: $medium;
     text-align: center;
     padding-top: rem(20);
+
+    @include mq("sp") {
+        padding-top: rem(0);
+        padding-left: rem(30);
+    }
 }

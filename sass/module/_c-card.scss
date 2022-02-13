@@ -8,6 +8,8 @@
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.16);
 
     @include mq("sp") {
+        padding-top: rem(50);
+        padding-bottom: rem(60);
         padding-left: $padding-sp;
         padding-right: $padding-sp;
     }
@@ -18,8 +20,6 @@
 
     @include mq("sp") {
         max-width: rem(540);
-        padding-left: $padding-sp;
-        padding-right: $padding-sp;
         margin: auto;
         display: block;
     }
@@ -66,6 +66,7 @@
     font-weight: $bold;
 
     @include mq("sp") {
+        font-size: rem(22);
         padding-top: rem(20);
     }
 }

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('page'); ?>
 
 <section class="beginner-mv beginner-sub mv-underlayer">
     <div class="mv-underlayer__inner">
@@ -156,8 +156,8 @@
                     <div class="receive__picture">
                         <img src=<?php echo get_template_directory_uri(); ?>/assets/img/receive01.jpg"" alt="歯">
                     </div>
-                    <a href="#">
-                        <div class="b-btn flow__btn">
+                    <a href="<?php echo esc_url(home_url('/self/')); ?>">
+                        <div class="b-btn receive__btn">
                             <p class="b-btn__text flow__text--color">セルフホワイトニングについて<span>＞</span></p>
                         </div>
                     </a>
@@ -173,8 +173,8 @@
                     <div class="receive__picture">
                         <img src=<?php echo get_template_directory_uri(); ?>/assets/img/receive02.jpg"" alt="歯">
                     </div>
-                    <a href="#">
-                        <div class="b-btn flow__btn">
+                    <a href="<?php echo esc_url(home_url('/winback/')); ?>">
+                        <div class="b-btn receive__btn">
                             <p class="b-btn__text flow__text--color">デンタルエステについて<span>＞</span></p>
                         </div>
                     </a>
@@ -183,4 +183,4 @@
         </div>
     </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer('page'); ?>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('page'); ?>
 
 <section class="information-mv information-sub mv-underlayer">
     <div class="mv-underlayer__inner">
@@ -44,11 +44,63 @@
             <div class="cards__item card">
                 <div class="card__box">
                     <div class="card__picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility01.jpg" alt="設備">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility01.jpg" alt="受付">
                     </div>
                     <div class="card__text-box">
                         <h4 class="card__title">受付</h4>
-                        <div class="card__text">明るい笑顔で皆様をお迎えし、親切・丁寧な対応を心がけています。</div>
+                        <p class="card__text">明るい笑顔で皆様をお迎えし、親切・丁寧な対応を心がけています。</p>
+                    </div>
+                </div>
+
+                <div class="card__box">
+                    <div class="card__picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility02.jpg" alt="待合スペース">
+                    </div>
+                    <div class="card__text-box">
+                        <h4 class="card__title">待合スペース</h4>
+                        <p class="card__text">コミュニケーションスペースとしても活用しています。</p>
+                    </div>
+                </div>
+
+                <div class="card__box">
+                    <div class="card__picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility03.jpg" alt="ケアグッズコーナー">
+                    </div>
+                    <div class="card__text-box">
+                        <h4 class="card__title">ケアグッズコーナー</h4>
+                        <p class="card__text">デンタルケアグッズコーナーです。<br>
+                            お客様に合わせたグッズのご提案も行います。お気軽にお尋ねください。</p>
+                    </div>
+                </div>
+
+                <div class="card__box">
+                    <div class="card__picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility04.jpg" alt="プライベートケアルーム">
+                    </div>
+                    <div class="card__text-box">
+                        <h4 class="card__title">プライベートケアルーム</h4>
+                        <p class="card__text">個室を2部屋完備しています。<br>
+                            リラックスしながら施術をお受けいただけます。</p>
+                    </div>
+                </div>
+
+                <div class="card__box">
+                    <div class="card__picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility05.jpg" alt="ホワイトニング照射器">
+                    </div>
+                    <div class="card__text-box">
+                        <h4 class="card__title">ホワイトニング照射器</h4>
+                        <p class="card__text">業界大手メーカーシャリオンのセルフホワイトニング照射器を導入しています。</p>
+                    </div>
+                </div>
+
+                <div class="card__box">
+                    <div class="card__picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facility06.jpg" alt="ウィンバック">
+                    </div>
+                    <div class="card__text-box">
+                        <h4 class="card__title">ウィンバック</h4>
+                        <p class="card__text">体内に300KHz〜500KHzの高周波を照射し、細胞を振動・回転運動させることで、摩擦により細胞を活性化させます。</p>
                     </div>
                 </div>
             </div>
@@ -85,14 +137,14 @@
                 </tr>
                 <tr align="left" valign="top" class="company__tr">
                     <td class="company__td">営業時間</td>
-                    <th class="company__th">月・火・木・金・・・10:00-16-00<br>
-                        水　　　　　　・・・14:00-16:00<br>
-                        土　　　　　　・・・10:00-13:00（隔週）<br>
-                        日・祝　　　　・・・定休日（不定休）</th>
+                    <th class="company__th">月・火・木・金<br class="company__br"><span>・・・</span>10:00-16-00<br>
+                        水<br class="company__br"><span>　　　　　　・・・</span>14:00-16:00<br>
+                        土<br class="company__br"><span>　　　　　　・・・</span>10:00-13:00（隔週）<br>
+                        日・祝<br class="company__br"><span>　　　　・・・</span>定休日（不定休）</th>
                 </tr>
             </table>
         </div>
     </div>
 </section>
 
-<?php get_footer(); ?>
+<?php get_footer('page'); ?>

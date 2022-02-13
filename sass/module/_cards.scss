@@ -13,11 +13,17 @@
 
     @include mq("sp") {
         width: 100%;
+        margin-right: rem(0);
+        margin-top: rem(45);
     }
 }
 
 .card__box:nth-child(-n+3) {
     margin-top: rem(0);
+
+    @include mq("sp") {
+        margin-top: rem(45);
+    }
 }
 
 .card__box:nth-child(3n) {
@@ -36,7 +42,7 @@
 .card__picture::before {
     content: "";
     display: block;
-    padding-top:68%;
+    padding-top: 68%;
 }
 
 .card__picture img {

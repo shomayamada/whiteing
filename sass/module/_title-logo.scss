@@ -3,4 +3,8 @@
     height: auto;
     margin: auto;
     padding-bottom: rem(15);
+
+    @include mq("sp") {
+        max-width: rem(46);
+    }
 }
